@@ -1,0 +1,27 @@
+body{
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.grid-conteiner{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-areas: 'header header header'
+    'menu main aside'
+    'footer footer footer';
+
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+    grid-area: header;
+}
+
+.header p{
+    grid-area: menu;
+    display: flex;
+    justify-content: center;
+}
